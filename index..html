@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florish - Flower Shop</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">            
+
+    <nav class="fixed top-0 w-full text-white z-10">
+        <div class="relative flex items-center p-6">
+            <h4 class="absolute left-6 text-2xl font-bold">Flower Shop</h4>
+            <div class="mx-auto flex space-x-6">
+               <a href="#home" class="text-red-600 font-semibold hover:text-red-400">Home</a>
+               <a href="#about" class="font-semibold hover:text-red-400">About</a>
+               <a href="#shop" class="font-semibold hover:text-red-400">Shop</a>
+               <a href="#contact" class="font-semibold hover:text-red-400">Contact</a>
+            </div>
+              <div class="relative"> 
+          <a href="#cart">
+          <img src="./images/cart.png" alt="cart" class="w-8 h-8 hover:scale-110 transition-transform">
+          </a>
+    <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+      0
+    </span>
+  </div>
+</nav>
+        </div>
+    </nav>
+
+    <section id="home" class="bg-cover bg-center h-screen flex flex-col items-center justify-center text-white pt-20" style="background-image: url('/images/bg.jpeg');">
+        <h1 class="text-2xl md:text-4xl font-bold mb-4">WELCOME TO FLORISH</h1>
+                <div class="ml-auto">
+             <a href="#shop" class="bg-blue-500 text-white px-6 py-3 text-lg font-semibold bg-blue-600">
+            Buy Now
+        </a>
+        </div>
+        <p class="text-3xl md:text-5xl font-bold text-center mb-6">
+            Let's Make Beautiful Flowers<br>a Part of Your Life.
+        </p>
+        <p class="text-lg md:text-xl mb-8 text-center px-4 md:px-0">
+            Explore a vibrant tapestry of blooms and arrangements that add color, fragrance, and elegance to your life.<br>
+            Discover the perfect floral expression for every moment and occasion.
+        </p>
+        <a href="#shop" class="bg-red-500 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-red-600">
+            Shop Now
+        </a>
+        </section>
+             <section id="about-florish" class="py-20 px-4 md:px-20 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+        
+                <div class="w-full md:w-1/2 p-6">
+                    <h2 class="text-3xl font-bold text-red-600 mb-6">About Florish</h2>
+                    <h3 class="text-2xl font-semibold text-black-700 mb-4">
+                       Blossoming Your Special Moments with Nature's Fine
+                    </h3>
+                    <p class="text-lg text-gray-600 mb-6">
+                         Welcome to Florist, where floral artistry meets passion for nature's beauty. Our 
+                         story is rooted in a deep love for flowers and a commitment to creating<br>unforgettable moments for our customers.
+                    </p>
+                    <div class="text-left">
+                        <a href="#read-more" class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-pink-700 transition">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2 p-6 grid grid-cols-2 gap-4">
+                    <img src="/images/pic1.jpeg" alt="pic 1" class="w-full h-64 translate-y-10 mt-20 object-cover rounded-lg">
+                    <img src="/images/pic2.jpeg" alt="pic 2" class="w-full h-68 object-cover rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+   
+       <section id="new-arrivals" class="py-20 px-4 md:px-20 bg-gray-100">
+        <h2 class="text-3xl font-bold text-center mb-6 text-red-600">New Arrivals</h2>
+        <p class="text-lg md:text-xl text-center mb-10 text-gray-600">
+           Discover the Latest Additions at Your<br>Top Choice Flower Shop
+        </p>
+            <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+             Share some details here. This is Flexible section where you can share anything you want.
+         </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
+     
+        <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/flower1.jpeg" alt="flower 1" class="w-full h-64 object-cover">
+             <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Flower</h1>
+           <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+            Custom Floral Design
+        </p>
+            <p class="text-1xl md:text-1xl font-bold text-center mb-5 text-gray-700">
+                $127.00.$86.00
+        </p>
+        </div>
+
+        <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/bouquet1.jpeg" alt="Bouquet 1" class="w-full h-64 object-cover">
+            
+         <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Bouquet</h1>
+              <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+                 Periwinkle Flower
+        </p>
+            <p class="text-1xl md:text-1xl font-bold text-center mb-5 text-gray-700">
+                $127.00.$86.00
+        </p>
+        </div>
+
+        <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/bouquet2.jpg" alt="Bouquet 2" class="w-full h-64 object-cover">
+            <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Bouquet</h1>
+           <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+             Periwinkle Flowers Bouquet
+         </p>
+              <p class="text-1xl md:text-1xl font-bold text-center mb-5 text-gray-700">
+                 $79.00.$56.00
+        </p>
+        </div>
+
+         <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/bouquet3.jpg" alt="Bouquet 3" class="w-full h-64 object-cover">
+           <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Bouquet</h1>
+              <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+                 Rose Flower Bouquet
+        </p>
+               <p class="text-1xl md:text-1xl font-bold text-center mb-5 text-gray-700">
+                 $210.00.$199.00
+        </p>
+        </div>
+       
+        <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/bouquet4.jpeg" alt="Bouquet 4" class="w-full h-64 object-cover">
+              <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Bouquet</h1>
+             <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+              Tulip Custom Flower
+        </p>
+              <p class="text-1xl md:text-1xl font-bold text-center mb-5 text-gray-700">
+                  $159.00.$129.00
+        </p>
+       </div>
+       
+        <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/bouquet5.jpeg" alt="Bouquet 5" class="w-full h-64 object-cover max-w-6xl">
+           <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Bouquet</h1>
+
+            <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+               Tulip Flower
+        </p>
+          <p class="text-1xl md:text-1xl font-bold text-center mb-5 text-gray-700">
+                $129.00.$99.00
+        </p>
+        </div>
+
+                
+           
+    </section>
+
+    <section id="about" class="py-20 px-4 md:px-20 bg-cover bg-center h-screen flex flex-col justify-center text-white"
+         style="background-image: url('/images/about.jpeg');">
+        <h2 class="text-3xl font-bold text-center mb-10 text-white-800">About Us</h2>
+        <p class="text-3xl md:text-5xl font-bold text-center mb-6">
+            Embarking on the Path to<br> Our Dreams
+        </p>
+         <p class="text-lg md:text-xl mb-8 text-center px-4 md:px-0">
+            Share some details here. This is Flexible section where you can share anything you want. It could be details or<br>
+             some information.
+         </p>
+
+    </section>
+          <section class="py-16 bg-gray-800">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+
+    <div class="md:w-1/2">
+      <img src="/images/story.jpeg" alt="Our Story Image" class="w-full h-auto rounded-lg shadow-lg">
+    </div>
+
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold text-white mb-4">Our Story</h2>
+      <h3 class="text-xl font-semibold text-white mb-6">A Journey from Passion to Florist</h3>
+      <p class="text-white mb-6">
+        Our journey began with a seed of passion that blossomed into a flourishing business. Allow us to share the story of our founder's deep-rooted love for flowers and how it led to the creation of your trusted floral destination.
+      </p>
+      <p class="text-white mb-8">
+        Explore the tale of dedication, creativity, and a vision to spread the joy of nature's beauty through the art of floral design. Discover the moments that shaped our founder’s path and paved the way for Florist to become a symbol of floral excellence.
+      </p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+  <div class="p-6">
+    <h4 class="text-3xl font-bold text-white">500k+</h4>
+    <p class="text-white mt-2">Happy Customers</p>
+  </div>
+
+  <div class="p-6">
+    <h4 class="text-3xl font-bold text-white">400+</h4>
+    <p class="text-white mt-2">Products</p>
+  </div>
+
+  <div class="p-6">
+    <h4 class="text-3xl font-bold text-white">43+</h4>
+    <p class="text-white mt-2">Worldwide Shop</p>
+  </div>
+
+  <div class="p-6">
+    <h4 class="text-3xl font-bold text-white">8+</h4>
+    <p class="text-white  mt-2">Winning Awards</p>
+  </div>
+</div>
+</section>
+    <section id="Team" class="py-20 px-4 md:px-20 bg-800">
+        <h2 class="text-3xl font-bold text-center mb-6 text-red-600">Our Team</h2>
+        <p class="text-lg md:text-xl text-center mb-10 text-black-600">
+             Our Dedicated Team of Enthusiasts
+        </p>
+            <p class="text-1xl md:text-1xl font-bold text-center mb-5 text-gray-500">
+           Share some details here. This is Flexible section where you can share anything you want.
+         </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/team1.jpeg" alt="team 1" class="w-full h-64 object-cover">
+             <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Elizabeth B.</h1>
+           <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+             Owner
+        </p>
+        </div>
+
+        <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/team2.jpeg" alt="team 2" class="w-full h-64 object-cover">
+            
+         <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Amelia M.</h1>
+              <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+                   Co-Founder
+        </p>
+        </div>
+
+        <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/team3.jpeg" alt="team 3" class="w-full h-64 object-cover">
+            <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                 Victoria D.</h1>
+           <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+             Marketing Manager
+         </p>
+        </div>
+            <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/team4.jpeg" alt="team 4" class="w-full h-64 object-cover">
+            <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                  Audrey S.</h1>
+           <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+              Florist
+           </p>
+        </div>
+    </section>
+     <section id="shop" class="py-20 px-4 md:px-20 bg-gray-100">
+    <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Our Shop</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+     
+        <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/flower1.jpeg" alt="flower 1" class="w-full h-64 object-cover">
+             <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Flower</h1>
+           <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+            Custom Floral Design
+        </p>
+            <p class="text-1xl md:text-1xl font-bold text-center mb-5 text-gray-700">
+                $127.00.$86.00
+        </p>
+        </div>
+
+        <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/bouquet1.jpeg" alt="Bouquet 1" class="w-full h-64 object-cover">
+            
+         <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Bouquet</h1>
+              <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+                 Periwinkle Flower
+        </p>
+            <p class="text-1xl md:text-1xl font-bold text-center mb-5 text-gray-700">
+                $127.00.$86.00
+        </p>
+        </div>
+
+        <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/bouquet2.jpg" alt="Bouquet 2" class="w-full h-64 object-cover">
+            <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Bouquet</h1>
+           <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+             Periwinkle Flowers Bouquet
+         </p>
+              <p class="text-1xl md:text-1xl font-bold text-center mb-5 text-gray-700">
+                 $79.00.$56.00
+        </p>
+        </div>
+
+        <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/bouquet3.jpg" alt="Bouquet 3" class="w-full h-64 object-cover">
+           <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Bouquet</h1>
+              <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+                 Rose Flower Bouquet
+        </p>
+               <p class="text-1xl md:text-1xl font-bold text-center mb-5 text-gray-700">
+                 $210.00.$199.00
+        </p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+       
+        <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/bouquet4.jpeg" alt="Bouquet 4" class="w-full h-64 object-cover">
+              <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Bouquet</h1>
+             <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+              Tulip Custom Flower
+        </p>
+              <p class="text-1xl md:text-1xl font-bold text-center mb-5 text-gray-700">
+                  $159.00.$129.00
+        </p>
+        </div>
+
+       
+        <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/bouquet5.jpeg" alt="Bouquet 5" class="w-full h-64 object-cover">
+           <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Bouquet</h1>
+
+            <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+               Tulip Flower
+        </p>
+          <p class="text-1xl md:text-1xl font-bold text-center mb-5 text-gray-700">
+                $129.00.$99.00
+        </p>
+        </div>
+
+     
+        <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/bouquet7.jpeg" alt="Bouquet 7" class="w-full h-64 object-cover">
+           <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Bouquet</h1>
+            <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+                Wedding Flower Bouquet
+        </p>
+              <p class="text-1xl md:text-1xl font-bold text-center mb-5 text-gray-700">
+                 $319.00.$299.00
+        </p>
+        </div>
+
+       
+        <div class="relative rounded-lg overflow-hidden">
+            <img src="/images/bouquet8.jpeg" alt="Bouquet 8" class="w-full h-64 object-cover">
+           <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Bouquet</h1>
+         <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+            White Flower Bouquet
+        </p>
+          <p class="text-1xl md:text-1xl font-bold text-center mb-5 text-gray-700">
+              $229.00.$209.00
+        </p>
+        </div>
+    </div>
+
+    <div class="flex justify-center mt-8">
+        <div class="relative rounded-lg overflow-hidden mr-auto">
+            <img src="/images/bouquet9.jpeg" alt="Bouquet 9" class="w-full h-64 object-cover">
+               <h1 class="text-1xl md:text-1xl font-bold mb-5 text-center text-gray-700">
+                Bouquet</h1>
+            <p class="text-1xl md:text-1xl font-bold text-center mb-5">
+              Winkle Flower Bouquet
+        </p>
+            <p class="text-1xl md:text-1xl font-bold text-center mb-5 text-gray-700">
+               $99.00.$67.00
+        </p>
+        </div>
+    </div>
+</section>
+    <section id="contact" class="py-20 px-4 md:px-20 bg-cover bg-center h-screen flex flex-col justify-center text-white"
+         style="background-image: url('/images/rose.jpeg');">
+        <h2 class="text-3xl font-bold text-center mb-10 text-white-800">Contact Us</h2>
+        <p class="text-3xl md:text-5xl font-bold text-center mb-6">
+           Get in Touch with Our<br>Experts Team
+        </p>
+         <p class="text-lg md:text-xl mb-8 text-center px-4 md:px-0">
+          Share some details here. This is Flexible section where you can share anything you want.
+           It could be details<br>or some information.
+         </p>
+
+    </section>
+   <section id="contact" class="py-20 px-4 md:px-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto">
+
+        <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Get In Touch With Us</h2>
+        <p class="text-center text-gray-600 mb-12">
+            Share some details here. This is a flexible section where you can share anything you want.
+        </p>
+
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+    
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Address</h3>
+                    <p class="text-gray-600">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Phone</h3>
+                    <p class="text-gray-600">(+91) 987 654 321</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Email</h3>
+                    <p class="text-gray-600">info@contact.com</p>
+                </div>
+
+               <div>
+    <h3 class="text-xl font-semibold text-gray-800 mb-2">Social Media</h3>
+    <div class="flex space-x-4">
+  
+        <a href="#" class="text-gray-600 hover:text-pink-500">
+            <i class="fab fa-facebook-f text-lg"></i>
+        </a>
+        
+        <a href="#" class="text-gray-600 hover:text-pink-500">
+            <i class="fab fa-instagram text-lg"></i>
+        </a>
+      
+        <a href="#" class="text-gray-600 hover:text-pink-500">
+            <i class="fab fa-twitter text-lg"></i>
+        </a>
+     
+        <a href="#" class="text-gray-600 hover:text-pink-500">
+            <i class="fab fa-youtube text-lg"></i>
+        </a>
+    </div>
+</div>
+
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <form>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                       
+                        <div>
+                            <label for="firstName" class="block text-gray-700 font-medium mb-2">First Name *</label>
+                            <div class="flex gap-2">
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    class="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                                    required>
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <label for="lastName" class="block text-gray-700 font-medium mb-2">Last Name *</label>
+                            <div class="flex gap-2">
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    class="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                                    required>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                            required>
+                        
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Comment or Message</label>
+                        <textarea
+                            id="message"
+                            rows="4"
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                        ></textarea>
+                    </div>
+
+                <button
+                   type="submit"
+                   class="bg-red-500 text-white py-2 px-6 rounded-lg hover:bg-red-600 transition duration-300"
+>
+                    Submit
+             </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <footer class="bg-gray-100 py-10 px-4 md:px-20">
+         <div class="max-w-6xl mx-auto">
+           
+            <div class="flex flex-col md:flex-row justify-between">
+             
+                <div class="w-full md:w-1/3 p-4">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Flower Shop</h2>
+                    <p class="text-lg text-gray-600 text-sm">
+                      Welcome to the world of Florist, where flowers come to life with love and creativity. Discover our story,
+                       our passion for flowers, and our<br>commitment to making every moment memorable.
+                </div>
+
+                <div class="w-full md:w-1/3 p-4">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-red-600 hover:text-red-600">Home</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-red-600">About</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-red-600">Shop</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-red-600">Contact</a></li>
+                    </ul>
+                </div>
+                    
+                <div class="w-full md:w-1/3 p-4">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Contact Us</h3>
+                    <address class="text-gray-600 not-italic space-y-2">
+                        <p>Address: 13 Fifth Avenue, New York 101660</p>
+                        <p>Email: <a href=" contact@info.com" class="hover:text-green-600">contact@info.com</a></p>
+                        <p>Phone: <a href="tel:+91 987 654 321" class="hover:text-green-600">+91 987 654 321</a></p>
+                    </address>
+                </div>
+            </div>
+        </div>
+            <hr>       
+        <p>&copy; Copyright © 2026 Flower Shop</p>
+    </footer>
+</body>
+</html>
